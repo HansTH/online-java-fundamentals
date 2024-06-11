@@ -1,6 +1,7 @@
 package labs_examples.arrays.labs;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * Arrays calculator
@@ -13,5 +14,17 @@ import java.util.Arrays;
  */
 
 public class Exercise_01 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter 10 numbers separated by a comma: ");
+        String[] numbers = scanner.nextLine().split(",");
+
+        int sum = 0;
+        for (String num : numbers) {
+            sum += Integer.parseInt(num);
+        }
+
+        System.out.println("The sum of numbers is: " + sum);
+    }
 
 }
