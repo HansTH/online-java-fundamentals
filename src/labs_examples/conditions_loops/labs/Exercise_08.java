@@ -8,4 +8,14 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_08 {
+
+    public static void main(String[] args) {
+        int counter = 100;
+        do {
+            if (counter % 3 == 0) {
+                System.out.println(counter);
+            }
+            counter--;
+        } while (counter >= 1);
+    }
 }
